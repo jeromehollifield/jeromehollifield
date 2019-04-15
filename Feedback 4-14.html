@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+
+<head>
+  
+    <script src="https://396d2f3.grapedrop.com/js/jquery.min.js"></script> 
+  
+  <link rel="stylesheet" type="text/css" href="feedback.css" />   
+
+  <link rel="stylesheet" 
+
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, 
+
+initial-scale=1">
+
+	
+	<title>Professional Portfolio of Jerome 
+
+Hollifield</title>
+	
+
+	
+<!-- 	<script type="text/javascript" 
+
+src="js/jquery.js"></script> -->
+	
+	<script type="text/javascript"> 
+	</script>
+</head>
+
+<body>
+		<div id="zone-bar">
+      <a class="welcome-title" 
+
+href="https://jeromehollifield.neocities.org/"><img 
+
+class="pic2" border="0"  alt="W3Schools"src="https://cdn1.vectorstock.com/i/thumb-
+
+large/86/90/initial-letter-jh-logo-template-design-
+
+vector-22638690.jpg" width="100" ></a>
+      
+      
+<div class="topnav" id="myTopnav">
+    <a href="https://jeromehollifield.neocities.org/feedback.html
+
+">Feedback</a>
+    <a 
+
+href="https://jeromehollifield.neocities.org/portfolio.htm
+
+l">Portfolio</a>
+  <a 
+
+href="https://jeromehollifield.neocities.org/">Profile</a>
+           <a href="javascript:void(0);" class="icon" 
+
+onclick="myFunction()">
+             <i class="fa fa-bars"></i>
+  </a>
+<!--  </div> -->
+</div>
+      </div>      
+	<div id="page-wrap">
+
+
+		<div id="top-bar">
+      <div class="floatleft">
+       <div id="title-header1">
+         <h1>Feedback</h1>
+               </div>
+       
+		</div>
+      		</div>
+
+
+    <!-- **************************
+  Feedback Form Input
+************************** -->
+      
+  <div class="container">
+		<form name="myForm" onsubmit="return validateForm()" method="POST" action="https://formspree.io/jerome.hollifield@mymail.champlain.edu" class="modal-content">  
+      
+        <div class="row">
+      <div class="col-25">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="email" name="email" placeholder="Your email.." autofocus>
+      </div>
+          </div>
+        <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="firstname" placeholder="Your name..">
+      </div>
+    </div>  
+       <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+          <div class="row">
+      <div class="col-25">
+        <label for="gender">Gender</label>
+      </div>
+      <div class="col-75">
+<input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+      </div>
+    </div>
+          <div class="row">
+      <div class="col-25">
+        <label for="feedback">Feedback</label>
+      </div>
+      <div class="col-75">
+        <textarea name="message" placeholder="Thanks for your feedback!" style="height:200px"></textarea>
+      </div>
+    </div>
+      <input type="submit" value="Submit Feedback">
+</form> 
+</div> 
+    
+<!-- Pagewrap end	--></div>
+    
+	
+  <!-- **************************
+  Footer Style
+************************** -->
+	 <style type="text/css" style="display: none !
+
+important;">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		overflow-x: hidden;
+</style>
+
+<div class="fixedfooter">
+  <p>&copy;2019 Jerome's Portfolio (Version 1.0)</p>
+</div>
+
+
+  <!-- **************************
+ Naviation Bar Responsive
+************************** -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+  
+<!-- **************************
+  Feedback Form Validation
+************************** -->
+ <script> 
+function validateForm() {
+  var f = document.forms["myForm"]["firstname"].value;
+    var l = document.forms["myForm"]["lastname"].value;
+    var t = document.forms["myForm"]["message"].value; 
+    var e = document.forms["myForm"]["email"].value; 
+        if (e == "") {
+    alert("Please register first");
+    return false;
+  }
+  
+  if (f == "") {
+    alert("First name must be filled out");
+    return false;
+  }
+    if (l == "") {
+    alert("Last name must be filled out");
+    return false;
+  }
+    if (t == "") {
+    alert("First enter your feedback");
+    return false;
+  }
+
+}
+</script>
+
+</body>
+
+</html>
